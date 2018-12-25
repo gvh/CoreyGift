@@ -133,7 +133,7 @@ It was already clear that we have a tradition here</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pc-bx-1ml">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pc-bx-1ml">
                                 <rect key="frame" x="292" y="309" width="169" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Press Meee!"/>
@@ -150,6 +150,7 @@ It was already clear that we have a tradition here</string>
                             <constraint firstItem="5Pc-bx-1ml" firstAttribute="centerX" secondItem="kv4-jM-OBw" secondAttribute="centerX" id="agd-hl-k4w"/>
                             <constraint firstItem="ije-W0-6zA" firstAttribute="top" secondItem="yVE-5U-CYd" secondAttribute="bottom" constant="32" id="emp-iG-0RP"/>
                             <constraint firstAttribute="trailing" secondItem="ije-W0-6zA" secondAttribute="trailing" constant="16" id="fJj-no-s5A"/>
+                            <constraint firstItem="5Pc-bx-1ml" firstAttribute="top" secondItem="ije-W0-6zA" secondAttribute="bottom" constant="24" id="qLQ-6k-4ng"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -169,24 +170,30 @@ It was already clear that we have a tradition here</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="We are making the third annual donation (in your name)  to:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-uJ-ke5">
-                                <rect key="frame" x="16" y="125" width="736" height="149"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are making the third annual donation (in your name)  to:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-uJ-ke5">
+                                <rect key="frame" x="16" y="125" width="736" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="eff-logo-plain-300.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-tC-XO9">
-                                <rect key="frame" x="259" y="309" width="250" height="290"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eff-logo-plain-300.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-tC-XO9">
+                                <rect key="frame" x="259" y="272" width="250" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="Tjg-Hz-xfX"/>
+                                    <constraint firstAttribute="width" constant="250" id="mCf-vZ-AqF"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTJ-47-yjs">
-                                <rect key="frame" x="36" y="47" width="303" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTJ-47-yjs">
+                                <rect key="frame" x="232.5" y="47" width="303" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="5O8-pS-Td2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KR-iM-py7">
-                                <rect key="frame" x="235" y="677" width="298" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KR-iM-py7">
+                                <rect key="frame" x="291" y="626" width="186" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Press Meeee!"/>
                                 <connections>
@@ -197,9 +204,13 @@ It was already clear that we have a tradition here</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GZK-uJ-ke5" secondAttribute="trailing" constant="16" id="C32-Su-fl6"/>
+                            <constraint firstItem="7KR-iM-py7" firstAttribute="centerX" secondItem="tWf-ky-iio" secondAttribute="centerX" id="CrH-Ge-QMT"/>
+                            <constraint firstItem="GZK-uJ-ke5" firstAttribute="top" secondItem="tTJ-47-yjs" secondAttribute="bottom" constant="39" id="Mbl-89-m8f"/>
                             <constraint firstItem="GZK-uJ-ke5" firstAttribute="leading" secondItem="tWf-ky-iio" secondAttribute="leading" constant="16" id="Qw9-Kb-Wun"/>
                             <constraint firstItem="vxX-tC-XO9" firstAttribute="top" secondItem="GZK-uJ-ke5" secondAttribute="bottom" constant="32" id="UZ4-xJ-S5r"/>
                             <constraint firstItem="vxX-tC-XO9" firstAttribute="centerX" secondItem="tWf-ky-iio" secondAttribute="centerX" id="b34-jV-oww"/>
+                            <constraint firstItem="tTJ-47-yjs" firstAttribute="top" secondItem="WMv-pq-Wkr" secondAttribute="bottom" constant="27" id="nfY-i0-Q1e"/>
+                            <constraint firstItem="tTJ-47-yjs" firstAttribute="centerX" secondItem="tWf-ky-iio" secondAttribute="centerX" id="p3E-bV-2Tj"/>
                             <constraint firstItem="7KR-iM-py7" firstAttribute="top" secondItem="vxX-tC-XO9" secondAttribute="bottom" constant="64" id="qIV-yl-XEw"/>
                         </constraints>
                     </view>
@@ -220,21 +231,20 @@ It was already clear that we have a tradition here</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Happy Holidays!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-yh-YMF">
-                                <rect key="frame" x="257" y="246" width="254" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Holidays!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-yh-YMF">
+                                <rect key="frame" x="257" y="337" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v58-tY-Rzr">
-                                <rect key="frame" x="33" y="52" width="309" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v58-tY-Rzr">
+                                <rect key="frame" x="232.5" y="52" width="303" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="https://github.com/gvh/CoreyGift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-Uy-hLF">
-                                <rect key="frame" x="257.5" y="591" width="253.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/gvh/CoreyGift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-Uy-hLF">
+                                <rect key="frame" x="257.5" y="636" width="253.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -242,8 +252,12 @@ It was already clear that we have a tradition here</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wXC-yh-YMF" firstAttribute="top" secondItem="v58-tY-Rzr" secondAttribute="bottom" constant="256" id="2J2-vq-IQo"/>
                             <constraint firstItem="QUs-Uy-hLF" firstAttribute="centerX" secondItem="4Dg-NK-R2g" secondAttribute="centerX" id="3Ue-zS-qua"/>
+                            <constraint firstItem="QUs-Uy-hLF" firstAttribute="top" secondItem="wXC-yh-YMF" secondAttribute="bottom" constant="256" id="G2U-Iz-Fp8"/>
+                            <constraint firstItem="v58-tY-Rzr" firstAttribute="top" secondItem="c0x-yy-wCO" secondAttribute="bottom" constant="32" id="WVF-8U-fQL"/>
                             <constraint firstItem="wXC-yh-YMF" firstAttribute="centerX" secondItem="4Dg-NK-R2g" secondAttribute="centerX" id="qE7-q6-uoC"/>
+                            <constraint firstItem="v58-tY-Rzr" firstAttribute="centerX" secondItem="4Dg-NK-R2g" secondAttribute="centerX" id="s1Z-VM-vXC"/>
                         </constraints>
                     </view>
                 </viewController>
