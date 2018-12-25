@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,26 +18,23 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-4o-zOk">
-                                <rect key="frame" x="16" y="28" width="343" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-4o-zOk">
+                                <rect key="frame" x="232.5" y="36" width="303" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mary and I again thought about the possible gifts to give you ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzK-2d-Rtg">
-                                <rect key="frame" x="16" y="151" width="343" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mary and I again thought about the possible gifts to give you ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzK-2d-Rtg">
+                                <rect key="frame" x="16" y="129" width="736" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-Ii-2Jg">
-                                <rect key="frame" x="102" y="457" width="170" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-Ii-2Jg">
+                                <rect key="frame" x="316" y="249" width="136" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Press Me!"/>
                                 <connections>
@@ -46,11 +43,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vbp-4o-zOk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2CV-eD-DNi"/>
+                            <constraint firstItem="MzK-2d-Rtg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="9JT-uI-TNd"/>
+                            <constraint firstAttribute="trailing" secondItem="MzK-2d-Rtg" secondAttribute="trailing" constant="16" id="OlR-sh-Y8K"/>
+                            <constraint firstItem="Kpw-Ii-2Jg" firstAttribute="top" secondItem="MzK-2d-Rtg" secondAttribute="bottom" constant="91" id="Qt6-fZ-RJh"/>
+                            <constraint firstItem="MzK-2d-Rtg" firstAttribute="top" secondItem="Vbp-4o-zOk" secondAttribute="bottom" constant="64" id="RXM-VT-toc"/>
+                            <constraint firstItem="Vbp-4o-zOk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="sf3-Ht-H3w"/>
+                            <constraint firstItem="Kpw-Ii-2Jg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xza-ev-YZT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="121.88905547226388"/>
+            <point key="canvasLocation" x="115.625" y="121.87499999999999"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qgZ-8X-zmP">
@@ -61,36 +67,42 @@
                         <viewControllerLayoutGuide type="bottom" id="R1p-8u-8zu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3P0-vL-mf5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-he-b7D">
-                                <rect key="frame" x="6" y="146" width="363" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">... well ok,  maybe we didn't really.   
-It was already clear that we have a tradition here</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-he-b7D">
+                                <rect key="frame" x="16" y="113" width="736" height="86"/>
+                                <string key="text">... well ok, maybe we didn't really.   
+It was already clear that we have a tradition here</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-Ba-MaC">
-                                <rect key="frame" x="104" y="448" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-Dl-Ztk">
+                                <rect key="frame" x="232.5" y="52" width="303" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-Ba-MaC">
+                                <rect key="frame" x="308" y="263" width="152" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Press Mee!"/>
                                 <connections>
                                     <segue destination="LZl-Qd-zJ5" kind="show" id="DNp-Fd-Ibw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corey's Gift Appliction : 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-Dl-Ztk">
-                                <rect key="frame" x="26" y="52" width="323" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cRL-he-b7D" firstAttribute="leading" secondItem="3P0-vL-mf5" secondAttribute="leading" constant="16" id="97r-1E-vyx"/>
+                            <constraint firstAttribute="trailing" secondItem="cRL-he-b7D" secondAttribute="trailing" constant="16" id="KrT-kl-LrA"/>
+                            <constraint firstItem="gnR-Ba-MaC" firstAttribute="top" secondItem="cRL-he-b7D" secondAttribute="bottom" constant="64" id="SUt-Km-b0r"/>
+                            <constraint firstItem="cRL-he-b7D" firstAttribute="top" secondItem="h2z-Dl-Ztk" secondAttribute="bottom" constant="32" id="cco-dJ-aLr"/>
+                            <constraint firstItem="h2z-Dl-Ztk" firstAttribute="centerX" secondItem="3P0-vL-mf5" secondAttribute="centerX" id="fDi-Oc-pHm"/>
+                            <constraint firstItem="h2z-Dl-Ztk" firstAttribute="top" secondItem="n6X-qC-HVD" secondAttribute="bottom" constant="32" id="w3K-ab-4s5"/>
+                            <constraint firstItem="gnR-Ba-MaC" firstAttribute="centerX" secondItem="3P0-vL-mf5" secondAttribute="centerX" id="ym5-3f-3aQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HU9-MN-EYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +118,7 @@ It was already clear that we have a tradition here</string>
                         <viewControllerLayoutGuide type="bottom" id="MGO-Zx-Kfy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kv4-jM-OBw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="That today,  as much as ever" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ije-W0-6zA">
@@ -156,7 +168,7 @@ It was already clear that we have a tradition here</string>
                         <viewControllerLayoutGuide type="bottom" id="Wbr-iW-Mfx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tWf-ky-iio">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-BR-Gas">
@@ -210,7 +222,7 @@ It was already clear that we have a tradition here</string>
                         <viewControllerLayoutGuide type="bottom" id="iVU-AY-yfa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Dg-NK-R2g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-yh-YMF">
