@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7ACC9127775B4600092728 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7ACC9027775B4600092728 /* ImageViewController.swift */; };
+		5F7ACC9327776DB200092728 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7ACC9227776DB200092728 /* LastViewController.swift */; };
 		5F890B441FF12D560087DD45 /* eff-logo-plain-300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F890B431FF12D560087DD45 /* eff-logo-plain-300.jpg */; };
 		5FCCA69E1E100D9900ACC630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCA69D1E100D9900ACC630 /* AppDelegate.swift */; };
 		5FCCA6A01E100D9900ACC630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCA69F1E100D9900ACC630 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F7ACC9027775B4600092728 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		5F7ACC9227776DB200092728 /* LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
 		5F890B431FF12D560087DD45 /* eff-logo-plain-300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eff-logo-plain-300.jpg"; sourceTree = "<group>"; };
 		5FCCA69A1E100D9900ACC630 /* CoreyGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreyGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCCA69D1E100D9900ACC630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				5FCCA6A41E100D9900ACC630 /* Assets.xcassets */,
 				5FCCA6A61E100D9900ACC630 /* LaunchScreen.storyboard */,
 				5FCCA6A91E100D9900ACC630 /* Info.plist */,
+				5F7ACC9027775B4600092728 /* ImageViewController.swift */,
+				5F7ACC9227776DB200092728 /* LastViewController.swift */,
 			);
 			path = CoreyGift;
 			sourceTree = "<group>";
@@ -94,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Gardner von Holt";
 				TargetAttributes = {
 					5FCCA6991E100D9900ACC630 = {
@@ -143,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FCCA6A01E100D9900ACC630 /* ViewController.swift in Sources */,
+				5F7ACC9127775B4600092728 /* ImageViewController.swift in Sources */,
+				5F7ACC9327776DB200092728 /* LastViewController.swift in Sources */,
 				5FCCA69E1E100D9900ACC630 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +202,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -218,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,6 +261,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -282,8 +292,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 53KYJ3US69;
 				INFOPLIST_FILE = CoreyGift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gardnervh.CoreyGift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,8 +309,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 53KYJ3US69;
 				INFOPLIST_FILE = CoreyGift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gardnervh.CoreyGift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
