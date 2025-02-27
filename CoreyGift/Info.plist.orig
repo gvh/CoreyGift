@@ -28,8 +28,16 @@
 	<array>
 		<string>armv7</string>
 	</array>
+<<<<<<< HEAD
 	<key>UIRequiresFullScreen</key>
 	<true/>
+=======
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+>>>>>>> main
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
